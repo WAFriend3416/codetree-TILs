@@ -1,7 +1,7 @@
 n = int(input())
 
 if(n < 1000):
-    print(no)
+    print('no')
 elif(n >= 1000 and n < 3000):
     print('mask')
 else:
