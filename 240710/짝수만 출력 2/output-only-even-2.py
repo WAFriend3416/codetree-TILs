@@ -1,6 +1,6 @@
 b,a = map(int,input().split())
 
-while(a>b):
-    if(b%2 == 0 ):
+while(a<=b):
+    if(b%2 == 0):
         print(b,end=' ')
     b = b - 1
