@@ -1,10 +1,9 @@
+total = 0
 for i in range(5):
     n = int(input())
-    if(n%3):
-        print(0)
-        break
-    else:
-        continue
-        
-if(i==4):
+    total = total + n
+
+if(total%3):
+    print(0)
+else:
     print(1)
