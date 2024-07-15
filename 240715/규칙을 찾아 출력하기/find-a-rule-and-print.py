@@ -3,7 +3,6 @@ n = int(input())
 cnt = n-2
 cnt2 = 0
 
-print(cnt)
 if n == 1:
     print('*')
 else:
