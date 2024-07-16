@@ -1,7 +1,7 @@
 a,b = map(int,input().split())
 li = []
 
-while(a>=1):
+while(a>1):
     mod_v = a%b
     li.append(mod_v)
     a = a//b
