@@ -1,8 +1,9 @@
 n = int(input())
 li = list(map(int,input().split()))
 
-li = sorted(li)
 
+li = reverse(sorted(li))
+li_even = []
 for i in li:
     if i%2 ==0:
-        print(i,end=' ')
+        li_even.append(i)
