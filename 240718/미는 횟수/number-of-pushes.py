@@ -11,10 +11,11 @@ for k  in range(len(n1)):
     for i in range(1,len(n1)):
         n1[i] = result[i-1]
     n1[0] = result[-1]
-
+    
+    #print(n1)
     if n1 == n2:
         print(cnt)
         break
 
-if k == len(n1):
+if k == len(n1)-1:
     print(-1)
