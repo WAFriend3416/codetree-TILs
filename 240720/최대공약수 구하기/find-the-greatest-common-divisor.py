@@ -6,11 +6,8 @@ def asdf(n,m):
             break
         n = m
         m = r
-    
-    if(m == 1):
-        print('서로소')
-    else:
-        print(m)
+
+    print(m)
 
 n,m = map(int,input().split())
 
