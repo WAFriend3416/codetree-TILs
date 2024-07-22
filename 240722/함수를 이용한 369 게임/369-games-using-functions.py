@@ -1,8 +1,7 @@
 def check_num_in3(n):
-    num1 = n % 10
-    num2 = n // 10
+    n = list(map(int,str(num)))
     li = [3,6,9]
-    return num1 in li or num2 in li
+    return n in li
 
 def check_num_mul3(n):
     return n%3 == 0
