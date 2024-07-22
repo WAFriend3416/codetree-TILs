@@ -16,7 +16,7 @@ def check_date(cnt,M,D):
     else:
         li_d = [31,28,31,30,31,30,31,31,30,31,30,31]
     
-    if D >= 1 and D <= li_d[M]:
+    if D >= 1 and D <= li_d[M-1]:
         return True
     else:
         return False
