@@ -1,5 +1,5 @@
 def check_list(n,m):
-    for i in range(0,n-m):
+    for i in range(0,n-m+1):
         if li1[i:i+m] == li2:
             return True
     return False
