@@ -1,11 +1,13 @@
 #1. 윤년 판단(연도)
 def check_year(n):
-    if n%4 != 0:
+    if n%4 == 0 and n%100 == 0:
         return False
-    elif n%100 == 0 and n%400 != 0:
-        return False
-    else:
+    elif n%4 == 0 and n%100 == 0 and n%400 == 0:
         return True
+    elif n%4 == 0:
+        return True
+    else:
+        return False
 
 #2. 날짜 존재여부 판단(윤년 여부, 월, 달)
 def check_date(cnt,M,D):
@@ -19,7 +21,6 @@ def check_date(cnt,M,D):
     else:
         return False
     
-
 #3. 계절 판단
 def check_season(M):
     if M >= 3 and M <= 5:
