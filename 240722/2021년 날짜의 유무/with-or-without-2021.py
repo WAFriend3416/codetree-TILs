@@ -4,6 +4,11 @@ def check_dateIn2012(M,D):
             return True
         else:
             return False
+    elif M == 8:
+        if D >= 1 and D <= 31:
+            return True
+        else:
+            return False
     else:
         if M % 2 ==0 and M < 13:
             if D >= 1 and D <= 30:
