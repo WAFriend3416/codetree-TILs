@@ -7,6 +7,6 @@ for _ in range(4):
     total = 0
     a = a-1
     b = b-1
-    for i in li[a:b]:
+    for i in li[a:b+1]:
         total += i
     print(total)
