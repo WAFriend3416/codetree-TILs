@@ -12,4 +12,4 @@ n = int(input())
 
 li = list(map(int,input().split()))
 
-print(search_max(0,6,0))
+print(search_max(0,n,0))
