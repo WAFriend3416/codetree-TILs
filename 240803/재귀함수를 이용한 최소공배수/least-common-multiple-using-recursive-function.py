@@ -14,6 +14,7 @@ lim = lcm(li[0],li[1])
 if n > 2:
     for i in range(2,n):
         lim = lcm(lim,li[i])
+    print(lim)
 
 elif n == 2:
     print(lcm(li[0],li[1]))
