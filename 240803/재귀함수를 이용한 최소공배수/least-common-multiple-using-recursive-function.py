@@ -2,9 +2,9 @@ n = int(input())
 
 li = list(map(int,input().split()))
 
-result = 1 * li[0]
+result = 1
 
-for i in li[1:]:
+for i in li:
     if result % i == 0:
         continue
     else:
