@@ -27,14 +27,14 @@ for i in range(n):
 
 li = sorted(Dataset_rain,key=lambda x: x.date)
 
-li_days = []
+# li_days = []
 
-for i in range(0,len(li)):
-    for j in range(i,len(li)):
-        if li[i].date == li[j].date:
-            li_days.append(li[i])
+# for i in range(0,len(li)):
+#     for j in range(i,len(li)):
+#         if li[i].date == li[j].date:
+#             li_days.append(li[i])
 
-li_days = sorted(li_days,key=lambda x: x.days)
+# li_days = sorted(li_days,key=lambda x: x.days)
 
 
 print(li_days[0].date,days_of_week[li_days[0].days],li_days[0].weather)
