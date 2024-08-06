@@ -37,4 +37,4 @@ li = sorted(Dataset_rain,key=lambda x: x.date)
 # li_days = sorted(li_days,key=lambda x: x.days)
 
 
-print(li_days[0].date,days_of_week[li_days[0].days],li_days[0].weather)
+print(li[0].date,days_of_week[li[0].days],li[0].weather)
