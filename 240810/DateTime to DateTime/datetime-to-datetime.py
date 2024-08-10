@@ -15,5 +15,7 @@ else:
     else:
         if day < 11 and hour >= 11 and mint < 11:
             print(-1)
+        elif: day < 11 and hour < 11 and mint < 11:
+            print(-1)
         else:
             cal_min(day,hour,mint)
