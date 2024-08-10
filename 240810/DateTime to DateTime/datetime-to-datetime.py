@@ -9,13 +9,9 @@ day,hour,mint = map(int,input().split())
 
 if day < 11:
     print(-1)
+elif day == 11 and hour < 11:  
+    print(-1)
+elif day == 11 and hour == 11 and mint < 11:
+    print(-1)
 else:
-    if day < 11 and hour < 11:
-        print(-1)
-    else:
-        if day < 11 and hour >= 11 and mint < 11:
-            print(-1)
-        elif day < 11 and hour < 11 and mint < 11:
-            print(-1)
-        else:
-            cal_min(day,hour,mint)
+    cal_min(day,hour,mint)
