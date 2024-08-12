@@ -20,9 +20,12 @@ while(cnt != m2):
     cnt += 1
 num2 += d2
 
-result = (num2-num1)//7       
+num2 -= num1
+num1 = 0
+result = 0
 
-if list_days[(num2-num1)%7] == target:
-    print(result+1)
-else:
-    print(result)
+for i in range(num1,num2+1):
+    if list_days[i%7] == target:
+        result += 1
+
+print(result)
