@@ -9,7 +9,7 @@ for i in range(m):
     if n == m:
         li[n] += 1
     else:
-        for i in range(n,m+1):
+        for i in range(n-1,m):
             li[i] += 1
     #print(li)
 
