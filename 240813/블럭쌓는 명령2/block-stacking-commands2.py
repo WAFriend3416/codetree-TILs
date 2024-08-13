@@ -7,7 +7,7 @@ li = [
 for i in range(m):
     n,m = map(int,input().split())
     if n == m:
-        li[n] += 1
+        li[n-1] += 1
     else:
         for i in range(n-1,m):
             li[i] += 1
