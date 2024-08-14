@@ -25,14 +25,14 @@ for _ in range(n):
     
     segments.append([section_left, section_right])
 
-print(segments)
+#print(segments)
 
 checked = [0] * (MAX_R + 1)
 
 for x1, x2 in segments:
     # OFFSET을 더해줍니다.
     x1, x2 = x1 + OFFSET, x2 + OFFSET
-    print(x1, x2)
+    #print(x1, x2)
     
     # 구간을 칠해줍니다.
     # 구간 단위로 진행하는 문제이므로
