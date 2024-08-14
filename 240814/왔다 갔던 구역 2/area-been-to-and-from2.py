@@ -1,16 +1,24 @@
-moveL = 0
-moveR = 0
+SIZE = 2000
+
+li = [
+    0 for _ in range(2000)
+]
+
+strPoint = 999
 
 n = int(input())
 for i in range(n):
     a,b = map(str,input().split())
     movePoint = int(a)
     if b == 'R':
-        moveR += movePoint
+        for i in range(movePoint+1):
+            li[strPoint+i] += 1
+        strPoint = strPoint+i
+        #print(strPoint)
     else:
-        moveL += movePoint
+        for i in range(movePoint+1):
+            li[strPoint-i] += 1
+        strPoint = strPoint-i
+        #print(strPoint)
 
-if moveL < moveR:
-    print(moveL)
-else:
-    print(moveR)
+print(li.count(2))
