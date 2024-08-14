@@ -6,9 +6,9 @@ for i in range(n):
     a,b = map(str,input().split())
     movePoint = int(a)
     if b == 'R':
-        moveR += b
+        moveR += movePoint
     else:
-        moveL += b
+        moveL += movePoint
 
 if moveL < moveR:
     print(moveL)
