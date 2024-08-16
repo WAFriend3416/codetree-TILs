@@ -1,6 +1,6 @@
 OFFSET = 1000
 area = [
-    [1 for _ in range(2001)] for _ in range(2001)
+    [0 for _ in range(2001)] for _ in range(2001)
 ]
 
 li_input1 = list(map(int,input().split()))
@@ -16,7 +16,7 @@ for i in range(li_input1[3]-li_input1[1]):
 
 for i in range(li_input2[3]-li_input2[1]):
     for j in range(li_input2[2]-li_input2[0]):
-        area[li_input2[0]+i][li_input2[1]+j] -= 2        
+        area[li_input2[0]+i][li_input2[1]+j] -= 1        
 
 
 cnt = 0
