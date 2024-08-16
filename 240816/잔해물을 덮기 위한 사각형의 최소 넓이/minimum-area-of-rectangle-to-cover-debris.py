@@ -22,7 +22,7 @@ else:
     # print(li_input1[2]-li_input1[0])
     for i in range(li_input1[3]-li_input1[1]):
         for j in range(li_input1[2]-li_input1[0]):
-            area[li_input1[0]+i][li_input1[1]+j] += 1
+            area[li_input1[0]+i][li_input1[1]+j] += 2
 
     i=0
     j=0
@@ -31,13 +31,13 @@ else:
     # print(li_input2[2]-li_input2[0])
     for i in range(li_input2[3]-li_input2[1]):
         for j in range(li_input2[2]-li_input2[0]):
-            area[li_input2[0]+i][li_input2[1]+j] -= 2        
+            area[li_input2[0]+i][li_input2[1]+j] -= 1        
 
 
     cnt = 0
     for row in area:
         for i in row:
-            if i == -2:
+            if i >= 1:
                 cnt += 1
 
     print(cnt)
