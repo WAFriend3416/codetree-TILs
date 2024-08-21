@@ -1,11 +1,11 @@
-OFFSET = 1000
+OFFSET = 100000
 
 N,M = map(int,input().split())
 
 A = [0] * (2 * OFFSET + 1)
 B = [0] * (2 * OFFSET + 1)
 
-cur = 1000
+cur = 100000
 cnt = 0
 for _ in range(N):
     direction, x = map(str,input().split())
@@ -24,7 +24,7 @@ for _ in range(N):
             x -= 1
 
 
-cur = 1000
+cur = 100000
 cnt = 0
 for _ in range(M):
     direction, x = map(str,input().split())
