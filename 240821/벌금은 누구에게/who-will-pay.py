@@ -10,7 +10,7 @@ for _ in range(b):
 for i in li_in:
     li[i-1] += 1
     #print(li)
-    if li[i-1] == 3:
+    if li[i-1] == c:
         setting = False
         print(li.index(li[i]))
         break
