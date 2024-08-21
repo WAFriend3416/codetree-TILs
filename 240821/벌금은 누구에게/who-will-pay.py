@@ -1,6 +1,6 @@
 a,b,c = map(int,input().split())
 
-li = [0] * a
+li = [0] * a + 1
 li_in = []
 setting = True
 
