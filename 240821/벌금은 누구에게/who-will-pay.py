@@ -2,6 +2,7 @@ a,b,c = map(int,input().split())
 
 li = [0] * a
 li_in = []
+setting = True
 
 for _ in range(b):
     li_in.append(int(input()))
@@ -9,5 +10,10 @@ for _ in range(b):
 for i in li_in:
     li[i-1] += 1
     if li[i-1] == 3:
+        setting = False
         print(li.index(li[i]))
         break
+    
+
+if setting:
+    print(-1)
