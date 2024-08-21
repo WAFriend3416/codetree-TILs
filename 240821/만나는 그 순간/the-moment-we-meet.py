@@ -1,5 +1,5 @@
 def simulate_movement(moves):
-    path = [100000]  # Start at position 100000
+    path = [10000]  # Start at position 100000
     for direction, x in moves:
         if direction == 'L':
             path.extend(range(path[-1] - 1, path[-1] - x - 1, -1))
@@ -27,7 +27,10 @@ moves_b = [(d, int(x)) for d, x in moves_b]
 # Simulate movements
 path_a = simulate_movement(moves_a)
 path_b = simulate_movement(moves_b)
-
+print(path_a)
+print(path_b)
 # Find meeting point
 result = find_meeting_point(path_a, path_b)
 print(result)
+
+#[100000, 100001, 100002, 100003, 100004, 100005, 100006, 100007, 100008, 100009, 100008, 100007, 100006, 100007, 100008, 100009, 100010, 100011]
