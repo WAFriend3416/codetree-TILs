@@ -5,9 +5,7 @@ li_in = []
 setting = True
 
 for _ in range(b):
-    li_in.append(int(input()))
-
-for i in li_in:
+    i= int(input())
     li[i-1] += 1
     #print(li)
     if li[i-1] == c:
