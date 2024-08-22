@@ -9,12 +9,30 @@ def simulate_movement(moves):
 
 def find_meeting_point(path_a, path_b):
     cnt = 0
-    for i in range(1, max(len(path_a), len(path_b))):
-        try:
-            if (path_a[i-1] != path_b[i-1]) and (path_a[i] == path_b[i]):
+    if len(path_a) > len(path_b):
+        small_li = 'b'
+        small = len(path_b)
+        big_li = 'a'
+        big = len(path_a)
+    else:
+        small_li = 'a'
+        small = len(path_a)
+        big_li = 'b'
+        big = len(path_b)
+    
+    for i in range(1, small):
+        if (path_a[i-1] != path_b[i-1]) and (path_a[i] == path_b[i]):
+            #print(i,path_a[i],path_b[i])
+            cnt += 1
+    
+    for j in range(small,big):
+        if small_li == 'a':
+            if (path_a[small-1] == path_b[j]):
+                #print(i,path_a[small-1],path_b[j])
                 cnt += 1
-        except:
-            if (path_a[len(path_a)-1] == path_b[i]):
+        else:
+            if (path_b[small-1] == path_a[j]):
+                #print(i,path_a[j],path_b[small-1])
                 cnt += 1
     return cnt
 
