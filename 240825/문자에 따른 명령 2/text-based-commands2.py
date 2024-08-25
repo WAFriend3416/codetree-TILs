@@ -10,7 +10,6 @@ dir_num = 3
 for direction in rotate_cmd:
     if direction == 'L': # 반시계방향
         dir_num = (dir_num-1 + 4) % 4
-        print(dir_num)
     elif direction == 'R': # 시계방향
         dir_num = (dir_num+1) % 4
     else: # direction == 'F'
