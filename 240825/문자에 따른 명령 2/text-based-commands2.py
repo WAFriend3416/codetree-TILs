@@ -2,8 +2,9 @@ rotate_cmd = list(map(str,input()))
 
 x,y = 0,0
 
-dx, dy = [1, -1, 0, 0], [0, 0, -1, 1]
-# E, W , S , N
+dx = [1, 0, -1, 0]
+dy = [0, -1, 0, 1]
+    # E, S, W, N
 
 dir_num = 3
 
@@ -16,7 +17,3 @@ for direction in rotate_cmd:
         x,y = x+dx[dir_num] , y+dy[dir_num]
 
 print(x,y)
-
-
-# move
-nx, ny = x + dx[dir_num], y + dy[dir_num]
