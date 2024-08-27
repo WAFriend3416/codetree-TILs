@@ -5,7 +5,7 @@ area = [
 ]
 
 def in_range(x,y):
-    if (x >= 0 and x < N) and (y>=0 and y < N):
+    if (x >= 0 and x < N) and (y>=0 and y < M):
         return True
     else:
         return False
@@ -19,11 +19,12 @@ x,y = 0,0 # 초기 위치
 area[x][y] = 1
 cnt = 1
 
-for _ in range(0,N):
-    for _ in range(0,M):
+for _ in range(N):
+    for _ in range(M):
         if cnt == N*M:
             break
         cur_x , cur_y = x+dx[dir_num] , y+dy[dir_num]
+        #print(cur_x,cur_y,dir_num)
         if in_range(cur_x , cur_y) and area[cur_x][cur_y] == 0:
             cnt += 1
             area[cur_x][cur_y] = cnt
