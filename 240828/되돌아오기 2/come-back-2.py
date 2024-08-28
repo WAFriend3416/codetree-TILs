@@ -20,7 +20,7 @@ for D in cmd:
             stopS = True
             break
     elif D == 'L': # 반시계
-        dir_num = (dir_num -1 + 3) % 4
+        dir_num = (dir_num -1 + 4) % 4
         cnt += 1
     elif D == 'R': # 시계
         dir_num = (dir_num + 1) % 4
@@ -28,6 +28,8 @@ for D in cmd:
     else:
         print("wrong Input")
 
+    #print(cur_x, cur_y)
+    
 if stopS:
     print(cnt)
 else:
