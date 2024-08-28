@@ -36,7 +36,7 @@ for D,T in move_cmd:
 
         for _ in range(T):
             cur_x, cur_y = cur_x + dx[dir_num] , cur_y + dy[dir_num]
-            print(D,cur_x,cur_y)
+            #print(D,cur_x,cur_y)
             cnt += 1
             if cur_x == x and cur_y == y:
                 stopS = True
