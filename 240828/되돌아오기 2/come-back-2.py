@@ -17,6 +17,7 @@ for D in cmd:
         cur_x, cur_y = cur_x + dx[dir_num] , cur_y + dy[dir_num]
         cnt += 1
         if cur_x == x and cur_y == y:
+            stopS = True
             break
     elif D == 'L': # 반시계
         dir_num = (dir_num -1 + 3) % 4
@@ -27,4 +28,7 @@ for D in cmd:
     else:
         print("wrong Input")
 
-print(cnt)
+if stopS:
+    print(cnt)
+else:
+    print(-1)
