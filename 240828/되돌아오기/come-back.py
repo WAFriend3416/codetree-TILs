@@ -42,4 +42,7 @@ for D,T in move_cmd:
                 stopS = True
                 break
 
-print(cnt)
+if stopS:
+    print(cnt)
+else:
+    print(-1)
