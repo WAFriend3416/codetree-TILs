@@ -6,6 +6,6 @@ for i in STR:
 
 STR = "".join(STR)
 if STR == STR_R:
-    print('YES')
+    print('Yes')
 else:
     print('No')
