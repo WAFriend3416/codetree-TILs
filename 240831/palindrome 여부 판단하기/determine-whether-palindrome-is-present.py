@@ -8,4 +8,4 @@ STR = "".join(STR)
 if STR == STR_R:
     print('YES')
 else:
-    print('NO')
+    print('No')
