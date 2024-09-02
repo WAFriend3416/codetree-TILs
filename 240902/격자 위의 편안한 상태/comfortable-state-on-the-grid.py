@@ -9,6 +9,7 @@ area = [
 ]
 
 def printArea():
+    print("==========================")
     for i in area:
         for item in i:
             print(item, end=' ')
@@ -16,6 +17,7 @@ def printArea():
     print("==========================")
 
 def check_comfortable(x,y):
+    #print(x,y)
     area[x][y] = 1
     cnt = 0
     #printArea()
@@ -27,7 +29,7 @@ def check_comfortable(x,y):
         else:
             if area[cur_x][cur_y] == 1:
                 cnt += 1
-    if cnt >= 3:
+    if cnt == 3:
         return True
     else:
         return False
