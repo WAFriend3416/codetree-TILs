@@ -2,18 +2,23 @@
 dx = [1,0,-1,0] 
 dy = [0,-1,0,1] 
 
-x,y = 0,0 #원점
-cur_x , cur_y = 0,0 #현재위치
-
 N,M = map(int,input().split())
 
 area = [
     [0 for _ in range(N)] for _ in range(N)
 ]
 
+def printArea():
+    for i in area:
+        for item in i:
+            print(item, end=' ')
+        print()
+    print("==========================")
+
 def check_comfortable(x,y):
     area[x][y] = 1
     cnt = 0
+    #printArea()
     for i in range(4):
         cur_x = x + dx[i]
         cur_y = y + dy[i]
