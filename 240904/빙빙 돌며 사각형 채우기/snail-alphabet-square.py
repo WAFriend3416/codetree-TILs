@@ -36,7 +36,7 @@ while(count < total):
     cur_r,cur_c = cur_r + dr[dir_num], cur_c + dc[dir_num]
     area[cur_r][cur_c] = cnt
 
-    if ord(cnt) == 'Z':
+    if cnt == 'Z':
         cnt = chr(ord('A')-1)
     count += 1
 
