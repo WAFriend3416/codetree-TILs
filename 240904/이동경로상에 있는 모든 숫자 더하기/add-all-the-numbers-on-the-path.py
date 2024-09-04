@@ -8,15 +8,9 @@ CMD = list(input())
 dr = [0,1,0,-1]
 dc = [1,0,-1,0]
 
-area = [
-    [0 for _ in range(N)] for _ in range(N)
-]
-
-count = 0
-for i in range(N):
-    for j in range(N):
-        count += 1
-        area[i][j] = count
+area = []
+for _ in range(N):
+    area.append(list(map(int,input().split())))
 
 # 가운데 위치
 cur_r,cur_c = N//2,N//2
