@@ -32,10 +32,12 @@ while(count < total):
     if r < 0 or r >= N or c < 0 or c >= M or (area[r][c] != 0):
         dir_num = (dir_num+1)%4
     
-    
     cnt = chr(ord(cnt)+1)
     cur_r,cur_c = cur_r + dr[dir_num], cur_c + dc[dir_num]
     area[cur_r][cur_c] = cnt
+
+    if ord(cnt) == Z:
+        cnt = chr(ord('A')-1)
     count += 1
 
 
