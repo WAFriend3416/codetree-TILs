@@ -7,10 +7,10 @@ def binaryToDecimal(n):
         total += n[i] * (2 ** (len(n)-1-i))
     return total
 
-maxNumber = binaryToDecimal(N)
+
 
 #print(binaryToDecimal(N))
-li_res = []
+li_res = [binaryToDecimal(N)]
 
 for i in range(0,len(N)):
     test = N
