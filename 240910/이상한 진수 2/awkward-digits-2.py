@@ -10,12 +10,12 @@ def binaryToDecimal(n):
 maxNumber = binaryToDecimal(N)
 
 #print(binaryToDecimal(N))
-
+li_res = []
 
 for i in range(0,len(N)):
     test = N
     test[i] = 0 if test[i] == 1 else 1
     #print(test,binaryToDecimal(test))
-    maxNumber = binaryToDecimal(test) if maxNumber <= binaryToDecimal(test) else maxNumber
+    li_res.append(binaryToDecimal(test))
 
-print(maxNumber)
+print(max(li_res))
