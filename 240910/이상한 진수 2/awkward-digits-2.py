@@ -10,11 +10,13 @@ def binaryToDecimal(n):
 maxNumber = 0
 
 #print(binaryToDecimal(N))
+if 0 in N:
+    print(binaryToDecimal(N))
+else:
+    for i in range(1,len(N)):
+        test = N
+        test[i] = 0 if test[i] == 1 else 1
+        #print(test,binaryToDecimal(test))
+        maxNumber = binaryToDecimal(test) if maxNumber <= binaryToDecimal(test) else maxNumber
 
-for i in range(1,len(N)):
-    test = N
-    test[i] = 0 if test[i] == 1 else 1
-    #print(test,binaryToDecimal(test))
-    maxNumber = binaryToDecimal(test) if maxNumber <= binaryToDecimal(test) else maxNumber
-
-print(maxNumber)
+    print(maxNumber)
