@@ -10,10 +10,12 @@ def binaryToDecimal(n):
 
 
 #print(binaryToDecimal(N))
-li_res = [binaryToDecimal(N)]
+li_res = []
 
 for i in range(0,len(N)):
-    test = N
+    test = []
+    for j in range(0,len(N)):
+        test.append(N[j])
     test[i] = 0 if test[i] == 1 else 1
     #print(test,binaryToDecimal(test))
     li_res.append(binaryToDecimal(test))
