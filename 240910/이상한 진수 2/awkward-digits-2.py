@@ -10,7 +10,7 @@ def binaryToDecimal(n):
 maxNumber = 0
 
 #print(binaryToDecimal(N))
-if 0 in N:
+if 0 not in N:
     print(binaryToDecimal(N))
 else:
     for i in range(1,len(N)):
