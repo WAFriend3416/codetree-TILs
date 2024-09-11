@@ -1,27 +1,23 @@
-N = int(input())
+import sys
 
-people_in_room = []
+INT_MAX = sys.maxsize
 
-for _ in range(N):
-    people_in_room.append(int(input()))
+# 변수 선언 및 입력
+n = int(input())
+arr = [
+	int(input())
+	for _ in range(n)
+]
 
-answer = 10000000
-#1번 방부터 최소거리 찾기
-for i in range(N):
-    total = 0
-    for j in range(N):
-        cnt = 0
-        search_num = i
-        while(search_num != j):
-            if search_num == 4:
-                search_num = 0
-            else:
-                search_num += 1
-            cnt += 1
-        total += cnt*people_in_room[j]
-        # if i == 1:
-        #     print(cnt,people_in_room[j])
-    if answer >= total:
-        answer = total
+min_dist = INT_MAX
+# i번째 방에서 출발했을 경우의 결과를 구해줍니다.
+for i in range(n):
+	sum_dist = 0
+	for j in range(n):
+		dist = (j + n - i) % n
+		sum_dist += dist * arr[j]
+	
+	# 가능한 거리의 합 중 최솟값을 구해줍니다.
+	min_dist = min(min_dist, sum_dist)
 
-print(answer)
+print(min_dist)
