@@ -1,20 +1,23 @@
-import copy
+import sys
+
+INT_MAX = sys.maxsize
 
 def calculate_distance(x1,x2):
     return abs(x1[0]-x2[0]) + abs(x1[1]-x2[1])
 
 
 N = int(input())
-checkPoint = []
-for _ in range(N):
-    checkPoint.append(list(map(int,input().split())))
+checkPoint = [
+    list(map(int,input().split()))
+    for _ in range(N)
+]
 
-answer = 1000000000000
+
+answer = INT_MAX
 result = 0
 for j in range(1,N-1):
     #print(j)
-    
-    checkPoint_new = copy.deepcopy(checkPoint) 
+    checkPoint_new = checkPoint[:]
     checkPoint_new.pop(j)
     #print(checkPoint_new)
     for k in range(1,len(checkPoint_new)):        
