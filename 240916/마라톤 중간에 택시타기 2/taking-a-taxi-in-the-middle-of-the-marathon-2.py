@@ -11,7 +11,7 @@ for _ in range(N):
 
 answer = 1000000000000
 result = 0
-for j in range(1,N-2):
+for j in range(1,N-1):
     #print(j)
     
     checkPoint_new = copy.deepcopy(checkPoint) 
