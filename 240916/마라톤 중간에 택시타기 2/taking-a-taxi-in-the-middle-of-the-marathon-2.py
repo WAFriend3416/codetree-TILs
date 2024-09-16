@@ -12,10 +12,10 @@ checkPoint = [
 ]
 
 answer = INT_MAX
-
+result = 0
 for j in range(1,N-1):
     #print(j)
-    result = 0
+    
     checkPoint_new = checkPoint[:]
     checkPoint_new.pop(j)
     #print(checkPoint_new)
