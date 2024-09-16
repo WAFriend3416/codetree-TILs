@@ -9,7 +9,7 @@ checkPoint = []
 for _ in range(N):
     checkPoint.append(list(map(int,input().split())))
 
-answer = 1000000000
+answer = 1000000000000
 result = 0
 for j in range(1,N-2):
     #print(j)
