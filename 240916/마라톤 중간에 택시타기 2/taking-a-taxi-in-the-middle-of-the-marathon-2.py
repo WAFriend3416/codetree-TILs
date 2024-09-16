@@ -1,3 +1,5 @@
+import copy
+
 def calculate_distance(x1,x2):
     return abs(x1[0]-x2[0]) + abs(x1[1]-x2[1])
 
@@ -11,12 +13,13 @@ answer = 1000000000
 result = 0
 for j in range(1,N-2):
     #print(j)
-    checkPoint_new = checkPoint
+    
+    checkPoint_new = copy.deepcopy(checkPoint) 
     checkPoint_new.pop(j)
-    for k in range(1,len(checkPoint_new)):
-        #print(checkPoint_new)
-        #print(checkPoint[k-1],checkPoint[k])
-        result += calculate_distance(checkPoint[k-1],checkPoint[k])
+    #print(checkPoint_new)
+    for k in range(1,len(checkPoint_new)):        
+        #print(checkPoint_new[k-1],checkPoint_new[k])
+        result += calculate_distance(checkPoint_new[k-1],checkPoint_new[k])
     if answer >= result:
         answer = result
 
