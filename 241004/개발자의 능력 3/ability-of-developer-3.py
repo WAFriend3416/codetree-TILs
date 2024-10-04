@@ -1,7 +1,7 @@
 nums = list(map(int,input().split()))
 
 sum0 = sum(nums)
-minV = 1000000000000000
+minV = 1000000000000
 
 for i in range(len(nums)-2):
     for j in range(1,len(nums)-1):
