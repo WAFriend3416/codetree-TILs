@@ -6,13 +6,12 @@ answer = 0
 
 for i in range(len(li)-M+1):
     cnt = 0
-    #print('i: ',i)
-    for j in range(M):
-        #print(i+j)
-        if li[i+j] in target:
+    #print(li[i:i+M])
+    for j in target:
+        if j in li[i:i+M]:
             cnt += 1
-    #print('-------------------')
     if cnt == M:
+        #print(li[i:i+M],target)
         answer += 1
 
 print(answer)
