@@ -4,12 +4,15 @@ target = list(map(int,input().split()))
 
 answer = 0
 
-for i in range(len(li)-2):
+for i in range(len(li)-M+1):
     cnt = 0
-    for j in range(3):
+    #print('i: ',i)
+    for j in range(M):
+        #print(i+j)
         if li[i+j] in target:
             cnt += 1
-    if cnt == 3:
+    #print('-------------------')
+    if cnt == M:
         answer += 1
 
 print(answer)
