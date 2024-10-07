@@ -14,7 +14,8 @@ for i in range(0,len(li)-M+1):
     for j in li[i:i+M]:
         #print(j,end = ' ')
         if j in target_case:
-            target_case.pop(target_case.index(j))
+            #target_case.pop(target_case.index(j))
+            target_case.remove(j)
     #print()
     if len(target_case) == 0:
        answer += 1
