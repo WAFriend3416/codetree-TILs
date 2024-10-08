@@ -7,7 +7,7 @@ for _ in range(N):
     basket[b_pos] += candy
 maxV = 0
 #print(basket[:16])
-for i in range(K-1,len(basket)-K):
+for i in range(K,len(basket)-K):
     #print()
     maxV = max(sum(basket[i-K:i+K+1]),maxV)
 
