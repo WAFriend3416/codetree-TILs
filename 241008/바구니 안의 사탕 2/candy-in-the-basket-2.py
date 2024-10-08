@@ -8,9 +8,12 @@ for _ in range(N):
 maxV = 0
 #print(basket[:16])
 #print(K,len(basket)-K)
-for i in range(len(basket)-K):
-    #print(i)
-    #print(basket[i:i+K+K])
-    maxV = max(maxV,sum(basket[i:i+K+K+1]))
+if K >= 100:
+    print(sum(basket))
+else:
+    for i in range(len(basket)-K):
+        #print(i)
+        #print(basket[i:i+K+K])
+        maxV = max(maxV,sum(basket[i:i+K+K+1]))
 
-print(maxV)
+    print(maxV)
