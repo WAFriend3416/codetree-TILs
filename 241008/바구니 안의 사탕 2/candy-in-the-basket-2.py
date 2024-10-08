@@ -9,6 +9,6 @@ maxV = 0
 #print(basket[:16])
 for i in range(K,len(basket)-K):
     #print()
-    maxV = max(sum(basket[i-K:i+K+1]),maxV)
+    maxV = max(maxV,sum(basket[i-K:i+K+1]))
 
 print(maxV)
