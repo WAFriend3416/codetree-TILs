@@ -95,7 +95,7 @@ def main():
             if iterator == dll.end():
                 continue
             else:
-                dll.erase(iterator)
+                iterator = dll.erase(iterator)
         elif cmd[0] == 'P':
             dll.insert(iterator,cmd[1])
         else:
