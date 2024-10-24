@@ -3,7 +3,7 @@ li = list(input())
 cnt = 0
 for i in range(len(li)):
     for j in li:
-        if i != j:
+        if li[i] != j:
             cnt += 1
 
 if cnt >= 2:
